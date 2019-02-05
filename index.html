@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slider</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    .slider {
+      margin: 0 auto;
+      width: 800px;
+        }
+
+    .view {
+      width: 100%;
+      height: 500px;
+      text-align: center;
+      background: #F8F8FF;
+      line-height: 500px;
+    }
+
+    .view img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+    }
+
+    .preview-out {
+      height: 100px;
+      position: relative;
+      overflow: hidden;
+      line-height: 100px;
+    }
+
+    .preview {
+      transition: 0.5s;
+    }
+
+    .preview-image {
+      width: 160px;
+      text-align: center;
+      float: left;
+      background: #F8F8FF;
+    }
+      
+    .preview-image img{
+      max-width: 100%;
+      min-height: 100%;
+      vertical-align: middle;
+    }
+
+    .previousImgButton, 
+    .nextImgButton {
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      width: 30px;
+      height: 30px;
+      background-color: #7FFFD4;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+      opacity: 0.5;
+      border-radius: 15px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+    .previousImgButton {
+      left: 0px;
+    }
+    
+    .nextImgButton {
+      right: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div id="slider_0" class="slider">
+  </div>
+  <div id="slider_1" class="slider">
+  </div>
+  <div id="slider_2" class="slider">
+  </div>
+<script type="text/javascript" src = "js/slider.js"></script>
+</body>
+</html>
